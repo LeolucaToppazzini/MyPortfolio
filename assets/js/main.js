@@ -79,6 +79,18 @@
     })
   }
 
+
+  /**
+   * Mostra o nasconde la descrizione in .service-box
+   */
+  on('click', '.service-box', function(e) {
+    const description = this.querySelector('.s-description');
+    if (description) {
+      description.style.display = description.style.display === 'none' || description.style.display === '' ? 'block' : 'none';
+    }
+  }, true);
+
+
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
